@@ -13,15 +13,15 @@ public class Menu {
         while (bucle) {
 
             System.out.println("");
-            System.out.println("Elige una opción:");
+            System.out.println("Tria una opció:");
             System.out.println("-------------------------------------------------------------------------------------------");
-            System.out.println("1 - Per quin camp volem buscar, títol, director, any, etc. \n" +
-                    "2 - Que doni la opció de saber quantes pel·lícules d’un determinat director hi apareixen\n" +
-                    "3 - Quants títols una determinada paraula hi apareix. \n" +
-                    "4 - Quantes vegades un director i un intèrpret coincideixen\n" +
-                    "5 - Pel·lícules on hi apareguin el intèrprets que selecciones\n" +
-                    "6 - Cercar quants tipus diferents d’idiomes hi ha\n" +
-                    "7 - Ordenar les pel·licules de mes antigues a mes recent\n" +
+            System.out.println("1 - Filtra per camps \n" +
+                    "2 - Pel·lícules per director \n" +
+                    "3 - Quants títols una determinada paraula hi apareix \n" +
+                    "4 - Quantes vegades un director i un intèrpret coincideixen \n" +
+                    "5 - Pel·lícules per actor o actriu \n" +
+                    "6 - Cercar quants tipus diferents d’idiomes hi ha \n" +
+                    "7 - Ordenar les pel·licules de mes antigues a mes recent \n" +
                     "8 - Salir");
             System.out.println("-------------------------------------------------------------------------------------------");
 
@@ -30,12 +30,12 @@ public class Menu {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Opcion 1");
-                    System.out.println("¿Por que quieres buscar?");
+                    System.out.println("Opció 1");
+                    System.out.println("¿Que vols buscar?");
                     System.out.println("1. Titol - 2. Director - 3. Any");
                     int busqueda = scanner.nextInt();
                     scanner.nextLine();
-                    System.out.println("Introduce tu busqueda:");
+                    System.out.println("Introdueix la teva busqueda:");
                     String texto = scanner.nextLine();
 
                     films.stream()
@@ -50,45 +50,45 @@ public class Menu {
                                     case 3:
                                         return f.getAny().contains(texto);
                                     default:
-                                        System.out.println("Tu busqueda no tuvo resultados");}
+                                        System.out.println("No hi ha resultats");}
                                 return false;
                             })
                             .forEach(System.out::println);
                     break;
                 case 2:
-                    System.out.println("Opcion 2");
-                    System.out.println("Elige un director:");
+                    System.out.println("Opció 2");
+                    System.out.println("Tria un director:");
                     String director = scanner.nextLine();
 
                     long cont = films.stream()
                             .filter(f -> f.getDireccio().contains(director)).count();
-                    System.out.println("Nº Peliculas: " + cont);
+                    System.out.println("Aquest directo surt " + cont + " en aquesta llista de pel·lícules");
 
                     break;
                 case 3:
-                    System.out.println("Opcion 3");
-                    System.out.println("¿Que palabra quieres buscar?");
+                    System.out.println("Opció 3");
+                    System.out.println("¿Quina paraula vols cercar?");
                     String palabra = scanner.nextLine();
                     long contP = films.stream()
                             .filter(f -> f.getTitol().contains(palabra)).count();
-                    System.out.println("Nº Peliculas: " + contP);
+                    System.out.println("Aquesta paraula surt " + contP + " al titol de les pel·lícules");
 
                     break;
                 case 4:
-                    System.out.println("Opcion 4");
+                    System.out.println("Opció 4");
 
-                    System.out.println("Elige un director:");
+                    System.out.println("Tria un director:");
                     String director4 = scanner.nextLine();
 
-                    System.out.println("Elige un interprete:");
+                    System.out.println("Tria un interpret:");
                     String interprete4 = scanner.nextLine();
                     long cont4 = films.stream()
                             .filter(f -> f.getDireccio().contains(director4) && f.getInterprets().contains(interprete4)).count();
-                    System.out.println("Nº Peliculas: " + cont4);
+                    System.out.println("Coincideixen a " + cont4 + " pel·lícules");
 
                     break;
                 case 5:
-                    System.out.println("Opcion 5");
+                    System.out.println("Opció 5");
                     System.out.println("Elige interpretes");
                     String iElegido = scanner.nextLine();
                     films.stream()
@@ -96,14 +96,14 @@ public class Menu {
                             .forEach(System.out::println);
                     break;
                 case 6:
-                    System.out.println("Opcion 6");
+                    System.out.println("Opció 6");
                     films.stream()
                             .distinct()
                             .forEach(f -> System.out.println(f.getI_original()));
 
                     break;
                 case 7:
-                    System.out.println("Opcion 7");
+                    System.out.println("Opció 7");
                     List<Peliculas> sortedFilms = films.stream().sorted().collect(Collectors.toList());
                     for (Peliculas pelis : sortedFilms){
                         System.out.println(pelis);
@@ -111,11 +111,11 @@ public class Menu {
 
                     break;
                 case 8:
-                    System.out.println("Hasta la vista, baby");
+                    System.out.println("Adeu siau");
                     bucle = false;
                     return;
                 default:
-                    System.out.println("Opción no valida");
+                    System.out.println("Opció no valida");
                     break;
             }
         }

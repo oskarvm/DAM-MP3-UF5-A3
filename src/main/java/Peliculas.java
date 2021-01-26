@@ -21,23 +21,23 @@ public class Peliculas implements Comparable<Peliculas>{
 
     @Override
     public String toString() {
-        return "Peliculas{" +
-                "idfilm='" + idfilm + '\'' +
-                ", prioritat='" + prioritat + '\'' +
-                ", titol='" + titol + '\'' +
-                ", situacio='" + situacio + '\'' +
-                ", any='" + any + '\'' +
-                ", cartell='" + cartell + '\'' +
-                ", original='" + original + '\'' +
-                ", direccio='" + direccio + '\'' +
-                ", interprets='" + interprets + '\'' +
-                ", sinopsi='" + sinopsi + '\'' +
-                ", versio='" + versio + '\'' +
-                ", i_original='" + i_original + '\'' +
-                ", qualificacio='" + qualificacio + '\'' +
-                ", trailer='" + trailer + '\'' +
-                ", web='" + web + '\'' +
-                ", estrena='" + estrena + '\'' +
+        return "Pelicula {" +
+                "ID del film: " + idfilm +
+                ", Prioritat: " + prioritat +
+                ", Titol: " + titol +
+                ", Situacio: " + situacio +
+                ", Any: " + any +
+                ", Cartell: " + cartell +
+                ", Titol original: " + original +
+                ", Director: " + direccio +
+                ", Actors i actrius: " + interprets +
+                ", Sipnisi: " + sinopsi +
+                ", Versió: " + versio +
+                ", Idioma original: " + i_original +
+                ", Qualifiació: " + qualificacio +
+                ", Traile: " + trailer +
+                ", Web: " + web +
+                ", Data d´estrena: " + estrena +
                 '}';
     }
 
