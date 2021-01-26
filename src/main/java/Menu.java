@@ -15,7 +15,8 @@ public class Menu {
             System.out.println("");
             System.out.println("Tria una opció:");
             System.out.println("-------------------------------------------------------------------------------------------");
-            System.out.println("1 - Filtra per camps \n" +
+            System.out.println(
+                    "1 - Filtra per camps \n" +
                     "2 - Pel·lícules per director \n" +
                     "3 - Quants títols una determinada paraula hi apareix \n" +
                     "4 - Quantes vegades un director i un intèrpret coincideixen \n" +
@@ -62,7 +63,7 @@ public class Menu {
 
                     long cont = films.stream()
                             .filter(f -> f.getDireccio().contains(director)).count();
-                    System.out.println("Aquest directo surt " + cont + " en aquesta llista de pel·lícules");
+                    System.out.println("Aquest directo surt " + cont + " vegades en aquesta llista de pel·lícules");
 
                     break;
                 case 3:
@@ -80,7 +81,7 @@ public class Menu {
                     System.out.println("Tria un director:");
                     String director4 = scanner.nextLine();
 
-                    System.out.println("Tria un interpret:");
+                    System.out.println("Tria un actor o actriu:");
                     String interprete4 = scanner.nextLine();
                     long cont4 = films.stream()
                             .filter(f -> f.getDireccio().contains(director4) && f.getInterprets().contains(interprete4)).count();
@@ -89,7 +90,7 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("Opció 5");
-                    System.out.println("Elige interpretes");
+                    System.out.println("Tria un actor o actriu");
                     String iElegido = scanner.nextLine();
                     films.stream()
                             .filter(f -> f.getInterprets().contains(iElegido))
