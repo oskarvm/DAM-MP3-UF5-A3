@@ -10,170 +10,170 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class Film {
-    private String idfilm;
-    private String prioritat;
-    private String titol;
-    private String situacio;
-    private String any;
-    private String cartell;
-    private String original;
-    private String direccio;
-    private String interprets;
-    private String sipnosis;
-    private String versio;
-    private String idioma;
-    private String qualificacio;
-    private String trailer;
-    private String web;
-    private String estrena;
+    private String IDFILM;
+    private String PRIORITAT;
+    private String TITOL;
+    private String SITUACIO;
+    private String ANY;
+    private String CARTELL;
+    private String ORIGINAL;
+    private String DIRECCIO;
+    private String INTERPRETS;
+    private String SINOPSI;
+    private String VERSIO;
+    private String IDIOMA_x0020_ORIGINAL;
+    private String QUALIFICACIO;
+    private String TRAILER;
+    private String WEB;
+    private String ESTRENA;
 
-    public String getIdfilm() {
-        return idfilm;
+    public String getIDFILM() {
+        return IDFILM;
     }
 
-    public void setIdfilm(String idfilm) {
-        this.idfilm = idfilm;
+    public void setIDFILM(String IDFILM) {
+        this.IDFILM = IDFILM;
     }
 
-    public String getPrioritat() {
-        return prioritat;
+    public String getPRIORITAT() {
+        return PRIORITAT;
     }
 
-    public void setPrioritat(String prioritat) {
-        this.prioritat = prioritat;
+    public void setPRIORITAT(String PRIORITAT) {
+        this.PRIORITAT = PRIORITAT;
     }
 
-    public String getTitol() {
-        return titol;
+    public String getTITOL() {
+        return TITOL;
     }
 
-    public void setTitol(String titol) {
-        this.titol = titol;
+    public void setTITOL(String TITOL) {
+        this.TITOL = TITOL;
     }
 
-    public String getSituacio() {
-        return situacio;
+    public String getSITUACIO() {
+        return SITUACIO;
     }
 
-    public void setSituacio(String situacio) {
-        this.situacio = situacio;
+    public void setSITUACIO(String SITUACIO) {
+        this.SITUACIO = SITUACIO;
     }
 
-    public String getAny() {
-        return any;
+    public String getANY() {
+        return ANY;
     }
 
-    public void setAny(String any) {
-        this.any = any;
+    public void setANY(String ANY) {
+        this.ANY = ANY;
     }
 
-    public String getCartell() {
-        return cartell;
+    public String getCARTELL() {
+        return CARTELL;
     }
 
-    public void setCartell(String cartell) {
-        this.cartell = cartell;
+    public void setCARTELL(String CARTELL) {
+        this.CARTELL = CARTELL;
     }
 
-    public String getOriginal() {
-        return original;
+    public String getORIGINAL() {
+        return ORIGINAL;
     }
 
-    public void setOriginal(String original) {
-        this.original = original;
+    public void setORIGINAL(String ORIGINAL) {
+        this.ORIGINAL = ORIGINAL;
     }
 
-    public String getDireccio() {
-        return direccio;
+    public String getDIRECCIO() {
+        return DIRECCIO;
     }
 
-    public void setDireccio(String direccio) {
-        this.direccio = direccio;
+    public void setDIRECCIO(String DIRECCIO) {
+        this.DIRECCIO = DIRECCIO;
     }
 
-    public String getInterprets() {
-        return interprets;
+    public String getINTERPRETS() {
+        return INTERPRETS;
     }
 
-    public void setInterprets(String interprets) {
-        this.interprets = interprets;
+    public void setINTERPRETS(String INTERPRETS) {
+        this.INTERPRETS = INTERPRETS;
     }
 
-    public String getSipnosis() {
-        return sipnosis;
+    public String getSINOPSI() {
+        return SINOPSI;
     }
 
-    public void setSipnosis(String sipnosis) {
-        this.sipnosis = sipnosis;
+    public void setSINOPSI(String SINOPSI) {
+        this.SINOPSI = SINOPSI;
     }
 
-    public String getVersio() {
-        return versio;
+    public String getVERSIO() {
+        return VERSIO;
     }
 
-    public void setVersio(String versio) {
-        this.versio = versio;
+    public void setVERSIO(String VERSIO) {
+        this.VERSIO = VERSIO;
     }
 
-    public String getIdioma() {
-        return idioma;
+    public String getIDIOMA_x0020_ORIGINAL() {
+        return IDIOMA_x0020_ORIGINAL;
     }
 
-    public void setIdioma(String idioma) {
-        this.idioma = idioma;
+    public void setIDIOMA_x0020_ORIGINAL(String IDIOMA_x0020_ORIGINAL) {
+        this.IDIOMA_x0020_ORIGINAL = IDIOMA_x0020_ORIGINAL;
     }
 
-    public String getQualificacio() {
-        return qualificacio;
+    public String getQUALIFICACIO() {
+        return QUALIFICACIO;
     }
 
-    public void setQualificacio(String qualificacio) {
-        this.qualificacio = qualificacio;
+    public void setQUALIFICACIO(String QUALIFICACIO) {
+        this.QUALIFICACIO = QUALIFICACIO;
     }
 
-    public String getTrailer() {
-        return trailer;
+    public String getTRAILER() {
+        return TRAILER;
     }
 
-    public void setTrailer(String trailer) {
-        this.trailer = trailer;
+    public void setTRAILER(String TRAILER) {
+        this.TRAILER = TRAILER;
     }
 
-    public String getWeb() {
-        return web;
+    public String getWEB() {
+        return WEB;
     }
 
-    public void setWeb(String web) {
-        this.web = web;
+    public void setWEB(String WEB) {
+        this.WEB = WEB;
     }
 
-    public String getEstrena() {
-        return estrena;
+    public String getESTRENA() {
+        return ESTRENA;
     }
 
-    public void setEstrena(String estrena) {
-        this.estrena = estrena;
+    public void setESTRENA(String ESTRENA) {
+        this.ESTRENA = ESTRENA;
     }
 
     @Override
     public String toString() {
         return "Pelicula {" +
-                "ID del film: " + idfilm +
-                ", Prioritat: " + prioritat +
-                ", Titol: " + titol +
-                ", Situacio: " + situacio +
-                ", Any: " + any +
-                ", Cartell: " + cartell +
-                ", Titol original: " + original +
-                ", Director: " + direccio +
-                ", Actors i actrius: " + interprets +
-                ", Sipnosis: " + sipnosis +
-                ", Versió: " + versio +
-                ", Idioma original: " + idioma +
-                ", Qualifiació: " + qualificacio +
-                ", Trailer: " + trailer +
-                ", Web: " + web +
-                ", Data d´estrena: " + estrena +
+                "ID del film: " + IDFILM +
+                ", Titol: " + TITOL +
+                ", Any: " + ANY +
+                ", Situacio: " + SITUACIO +
+                ", Cartell: " + CARTELL +
+                ", Titol original: " + ORIGINAL +
+                ", Director: " + DIRECCIO +
+                ", Actors i actrius: " + INTERPRETS +
+                ", Versió: " + VERSIO +
+                ", Idioma original: " + IDIOMA_x0020_ORIGINAL +
+                ", Qualifiació: " + QUALIFICACIO +
+                ", Prioritat: " + PRIORITAT +
+                ", Trailer: " + TRAILER +
+                ", Web: " + WEB +
+                ", Data d´estrena: " + ESTRENA +
+                ", Sipnosis: " + SINOPSI +
                 '}';
     }
 }
